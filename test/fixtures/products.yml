@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Infinix Note 40 Pro+
+  description: New
+  price: 260.99
+
+two:
+  name: Lenovo IdeaPad Gaming 3
+  description: 15ARH7 15.6" AMD Ryzen 7 6800H 3.2GHz / Nvidia GeForce RTX 3050 Laptop / 16GB RAM / 1TB SSD
+  price: 847.99
