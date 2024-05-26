@@ -1,0 +1,16 @@
+<%= render 'shared/flash' %>
+
+<h1>Products</h1>
+
+<%= link_to "New product", new_product_path %>
+
+<div id="products">
+  <% @products.each do |product| %>
+    <%= link_to product do %>
+      <%= render partial: 'products/product', locals: {product: product, show_description: @show_description } %>
+      <p>
+      <%= image_tag product.photo, width: 100 if product.photo.attached? %>
+      </p>
+    <% end %>
+  <% end %>
+</div>
