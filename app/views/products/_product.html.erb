@@ -1,19 +1,19 @@
 <div id="<%= dom_id product %>">
   
   <p>
-    <strong>Name:</strong>
+    <strong><%= t('activerecord.attributes.name') %>:</strong>
     <%= product.name %>
   </p>
 
   <% if show_description %>
     <p>
-      <strong>Description:</strong>
+      <strong><%= t('activerecord.attributes.description') %>:</strong>
       <%= product.description %>
     </p>
   <% end %>
 
   <p>
-    <strong>Price:</strong>
+    <strong><%= t('activerecord.attributes.price') %>:</strong>
     <%= product.price %>$
   </p>
 

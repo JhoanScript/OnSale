@@ -28,4 +28,66 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  activerecord:
+    models:
+      product: Product
+    attributes:
+      name: "Name"
+      description: "Description"
+      price: "Price"
+      photo: "Photo"
+      product:
+        name: "Name"
+        description: "Description"
+        price: "Price"
+        photo: "Photo"
+    errors:
+      models:
+        product:
+          attributes:
+            name:
+              blank: "can't be blank"
+            description:
+              blank: "can't be blank"
+            price:
+              blank: "can't be blank"
+  helpers:
+    select:
+      prompt: Please select
+    submit:
+      create: Create %{model}
+      submit: Save %{model}
+      update: Update %{model}
+  common:
+    confirm: "¿You're sure?"
+  products:
+    index:
+      title: "Products"
+      link: 
+        new: "New product"
+    show:
+      link:
+        edit: "Edit this product" 
+        back: "Back to products"
+      button:
+        destroy: "Destroy this product"
+    new:
+      title: "New product"
+      link:
+        back: "Back to products"
+    edit:
+      title: "Editing product"
+      link:
+        show: "Show this product"
+        back: "Back to products"
+    form:
+      error: 
+        one: "error"
+        other: "errors"
+      prohibited: "prohibited this product from being saved"
+    create:
+      created: "Product was successfully created."
+    update:
+      updated: "Product was successfully updated."
+    destroy:
+      destroyed: "Product was successfully destroyed."
