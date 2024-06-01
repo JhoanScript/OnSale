@@ -1,0 +1,64 @@
+es:
+  activerecord:
+    models:
+      product: Producto
+    attributes:
+      name: "Nombre"
+      description: "Descripción"
+      price: "Precio"
+      photo: "Foto"
+      product:
+        name: "Nombre"
+        description: "Descripción"
+        price: "Precio"
+        photo: "Foto"
+    errors:
+      models:
+        product:
+          attributes:
+            name:
+              blank: "no puede estar en blanco"
+            description:
+              blank: "no puede estar en blanco"
+            price:
+              blank: "no puede estar en blanco"
+  helpers:
+    select:
+      prompt: Por favor seleccione
+    submit:
+      create: Crear %{model}
+      submit: Guardar %{model}
+      update: Actualizar %{model}          
+  common:
+    confirm: "¿Estás seguro?"
+  products:
+    index:
+      title: "Productos"
+      link:
+        new: "Nuevo producto"
+    show:
+      link:
+        edit: "Editar este producto"
+        back: "Volver a productos"
+      button:
+        destroy: "Eliminar este producto"
+    new:
+      title: "Nuevo producto"
+      link:
+        back: "Volver a productos"
+    edit:
+      title: "Editar producto"
+      link:
+        show: "Mostar este producto"
+        back: "Volver a productos"
+    form:
+      error: 
+        one: "error"
+        other: "errores"
+      prohibited: "prohibido guardar este producto"
+    create:
+      created: "El producto fue creado exitosamente."
+    update:
+      updated: "El producto se actualizó correctamente."
+    destroy:
+      destroyed: "El producto fue eliminado exitosamente."
